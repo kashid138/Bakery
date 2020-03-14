@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="divSample.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <link href="Hamburger-Push-Navigation-Swipe-Menu/Hamburger-Push-Navigation-Swipe-Menu/css/cmenu2.css" rel="stylesheet" />
+        <link href="mycss.css" rel="stylesheet" type="text/css" />
+
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body>
+
+    <form id="form1" runat="server">
+        <div>
+
+            <div>
+                <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="../img/logo.png" /></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="AdminHome1.aspx">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../ContactUs.aspx">Contact Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../Add_item.aspx">Add Product</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="AdminCustomizeCake.aspx">View Orders</a>
+                                </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Hello,Admin!</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+
+                <footer style="background-color: #5c5959; color: #d5d5d5; padding-top: 2rem;">
+                    <div class="container-fluid padding">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <img src="../img/logo.png" />
+                                <hr class="light" />
+                                <p>99999999999</p>
+                                <p>yKASHID9@GMAIL.COM</p>
+                                <p>GORAI 2</p>
+                                <p>MUMBAI,MAHARASTRA</p>
+                            </div>
+                            <div class="col-md-4">
+                                <hr class="light" />
+                                <h5>Our hours</h5>
+                                <hr class="light" />
+                                <p>Monday:9am-5pm</p>
+                                <p>Saturday:10am-4pm</p>
+                                <p>Sunday-closed</p>
+                            </div>
+                            <div class="col-md-4">
+                                <hr class="light" />
+                                <h5>Service Area</h5>
+                                <hr class="light" />
+                                <p>MUMBAI,MAHARASTRA</p>
+                                <p>PUNE,MAHARASTRA</p>
+                                <p>THANE,MAHARASTRA</p>
+                            </div>
+                            <div class="col-12">
+                                <hr class="light" />
+                                <h5>&copy;BIRDYS</h5>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+
+        </div>
+    </form>
+</body>
+</html>
